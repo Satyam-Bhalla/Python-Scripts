@@ -2,7 +2,7 @@
 from urllib import request,parse
 
 def read_text():
-    quotes = open("W:\Profanity.txt")#Enter the path of text file in "double quotes"
+    quotes = open("Path to the text file")#Enter the path of text file in "double quotes"
     contents_of_file = quotes.read()
     quotes.close()
     check_profanity(contents_of_file)
