@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>NewsME</title>
+		<!--JS links -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+		<!--CSS links -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}">
+
+		
+	</head>
+	<body>
+		<div class="container">
+			 <div class="jumbotron">
+			 	<div class="content-wrap text-center">
+				    <h1>NewsME<br><p>Find any current news easily!!</p></h1>
+				 	<form method="POST" action="/search">
+				    <input id="tags" type="url" name="search" placeholder="https://example.com"autofocus="on" list="defaultURLs">
+				    <datalist id="defaultURLs">
+				    	<option value="https://timesofindia.indiatimes.com/" label="TimesOfIndia">
+				    	<option value="https://www.tribuneindia.com/" label="TribuneIndia">
+				    </datalist>
+				    <br>
+				    <button id="getResult" class="btn btn-default"><i class="fa fa-search"></i>Search</button>				    
+				    </form>
+				</div>
+			    <div class="wrap text-center">
+				    <ul>
+				    </ul>
+			    </div>
+
+			    {% block body %}
+			    
+			    {% endblock %}
+			</div>
+		</div>
+
+		
+	</body>
+</html>
