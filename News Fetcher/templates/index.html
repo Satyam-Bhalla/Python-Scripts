@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>NewsME</title>
+		<title>News Fetcher</title>
 		<!--JS links -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
@@ -21,9 +21,9 @@
 		<div class="container">
 			 <div class="jumbotron">
 			 	<div class="content-wrap text-center">
-				    <h1>NewsME<br><p>Find any current news easily!!</p></h1>
+				    <h1>News Fetcher<br><p>Find any current news easily!!</p></h1>
 				 	<form method="POST" action="/search">
-				    <input id="tags" type="url" name="search" placeholder="https://example.com"autofocus="on" list="defaultURLs">
+				    <input id="tags" type="text" name="search" placeholder="https://example.com"autofocus="on" list="defaultURLs">
 				    <datalist id="defaultURLs">
 				    	<option value="https://timesofindia.indiatimes.com/" label="TimesOfIndia">
 				    	<option value="https://www.tribuneindia.com/" label="TribuneIndia">
@@ -31,6 +31,7 @@
 				    <br>
 				    <button id="getResult" class="btn btn-default"><i class="fa fa-search"></i>Search</button>				    
 				    </form>
+				    <h3 style="color: white;">{{msg}}</h3>
 				</div>
 			    <div class="wrap text-center">
 				    <ul>
