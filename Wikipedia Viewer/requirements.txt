@@ -3,5 +3,5 @@ Flask-Cors==3.0.3
 Flask-PyMongo==2.1.0
 Flask-RESTful==0.3.6
 Flask-WTF==0.14.2
-requests==2.18.4
+requests==2.20.0
 WTForms==2.1
