@@ -1,5 +1,5 @@
 Flask==1.0
-Flask-Cors==3.0.3
+Flask-Cors==3.0.9
 Flask-PyMongo==2.1.0
 Flask-RESTful==0.3.6
 Flask-WTF==0.14.2
