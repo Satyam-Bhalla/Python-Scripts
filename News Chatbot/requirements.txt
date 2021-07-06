@@ -5,7 +5,7 @@ Flask==1.0.2
 gunicorn==19.8.1
 idna==2.7
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 pymessenger==0.0.7.0
 requests==2.20.0
